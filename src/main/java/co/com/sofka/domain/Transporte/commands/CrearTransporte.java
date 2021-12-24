@@ -1,19 +1,18 @@
 package co.com.sofka.domain.Transporte.commands;
 
 import co.com.sofka.General.Value.Nombre;
-import co.com.sofka.domain.Transporte.value.transporteIdanterior;
 import co.com.sofka.domain.generic.Command;
 
 public class CrearTransporte extends Command {
     private final Nombre nombre;
-    private final transporteIdanterior transporteId;
+    private final co.com.sofka.domain.Transporte.value.transporteId transporteId;
 
-    public CrearTransporte(transporteIdanterior transporteId, Nombre nombre) {
+    public CrearTransporte(co.com.sofka.domain.Transporte.value.transporteId transporteId, Nombre nombre) {
         this.nombre = nombre;
         this.transporteId = transporteId;
     }
 
-    public transporteIdanterior getTransporteId() {
+    public co.com.sofka.domain.Transporte.value.transporteId getTransporteId() {
         return transporteId;
     }
 

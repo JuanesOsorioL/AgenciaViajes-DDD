@@ -6,13 +6,13 @@ import co.com.sofka.domain.generic.Entity;
 
 import java.util.Objects;
 
-public class ServicioAgencia extends Entity<ServicioId> {
+public class ServicioAgencia extends Entity<ServicioAgenciaId> {
 
     private Nombre nombre;
     private Descripcion descripcion;
 
-    public ServicioAgencia(ServicioId servicioId , Nombre nombre, Descripcion descripcion) {
-        super(servicioId);
+    public ServicioAgencia(ServicioAgenciaId servicioAgenciaId , Nombre nombre, Descripcion descripcion) {
+        super(servicioAgenciaId);
         this.nombre= Objects.requireNonNull(nombre);
         this.descripcion= Objects.requireNonNull(descripcion);
     }

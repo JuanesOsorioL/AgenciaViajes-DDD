@@ -1,9 +1,8 @@
 package co.com.sofka.domain.Agencia.Entity;
 
 import co.com.sofka.General.Value.*;
-import co.com.sofka.domain.Agencia.value.Clave;
 import co.com.sofka.domain.Agencia.value.ClienteId;
-import co.com.sofka.domain.Agencia.value.Nikname;
+import co.com.sofka.domain.Agencia.value.NumeroPersonas;
 import co.com.sofka.domain.generic.Entity;
 
 import java.util.Objects;
@@ -13,24 +12,23 @@ public class Cliente extends Entity<ClienteId> {
     private Nombre nombre;
     private Celular celular;
     private Correo correo;
-    private Nikname nikname;
-    private Clave clave;
+    private NumeroPersonas NumeroPersonas;
 
-    public Cliente(ClienteId clienteId ,Nombre nombre, Celular celular,Correo correo,Nikname nikname,Clave clave) {
+
+    public Cliente(ClienteId clienteId , Nombre nombre, Celular celular, Correo correo, NumeroPersonas NumeroPersonas) {
         super(clienteId);
         this.nombre= Objects.requireNonNull(nombre);
         this.celular= Objects.requireNonNull(celular);
         this.correo= Objects.requireNonNull(correo);
-        this.nikname= Objects.requireNonNull(nikname);
-        this.clave= Objects.requireNonNull(clave);
+        this.NumeroPersonas= Objects.requireNonNull(NumeroPersonas);
     }
 
-    public void modificarNikname(Nikname nikname){
-        this.nikname = Objects.requireNonNull(nikname);
+    public void modificarCorreo(Correo correo){
+        this.correo = Objects.requireNonNull(correo);
     }
 
-    public void modificarClave(Clave clave){
-        this.clave = Objects.requireNonNull(clave);
+    public void modificarClave(NumeroPersonas NumeroPersonas){
+        this.NumeroPersonas = Objects.requireNonNull(NumeroPersonas);
     }
 
     public void modificarCelular(Celular celular){
@@ -49,11 +47,7 @@ public class Cliente extends Entity<ClienteId> {
         return correo;
     }
 
-    public Nikname nikname() {
-        return nikname;
-    }
-
-    public Clave clave() {
-        return clave;
+    public NumeroPersonas numeroPersonas() {
+        return NumeroPersonas;
     }
 }

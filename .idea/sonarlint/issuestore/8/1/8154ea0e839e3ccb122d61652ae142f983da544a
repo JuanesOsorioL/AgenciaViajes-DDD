@@ -1,11 +1,0 @@
-
-x	java:S116"WRename this field "TransporteID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æø×Ìøÿÿÿÿ8¾¨¹ØŞ/
-C
-java:S1948"&Make "guia" transient or serializable.(¼ßÚ8•›ºØŞ/
-I
-java:S1948"'Make "avion" transient or serializable.(ö³¯Ãıÿÿÿÿ8Ë’»ØŞ/
-I
-java:S1948"'Make "carro" transient or serializable.(ÁÉ×ûÿÿÿÿ8¨ì»ØŞ/
-]	java:S125/"<This block of commented-out lines of code should be removed.(×–­…ûÿÿÿÿ8ÊÇÁØŞ/
-h	java:S1004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ÙÈ±ÿÿÿÿÿ
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø³éÊ8“¥ØŞ/
