@@ -1,0 +1,8 @@
+
+Z
+java:S1117N"8Rename "guia" which hides the field declared at line 16.(Ë€ı‚ıÿÿÿÿ8”÷ÈŞ/
+V
+java:S1117S"9Rename "carro" which hides the field declared at line 18.(£Ö–›8€òüÈŞ/
+[
+java:S1117X"9Rename "avion" which hides the field declared at line 17.(Í¶üıÿÿÿÿ8¥‚şÈŞ/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÇøĞÏÿÿÿÿÿ

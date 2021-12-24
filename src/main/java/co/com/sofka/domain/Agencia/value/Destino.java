@@ -8,7 +8,7 @@ public class Destino implements ValueObject<String> {
     private String destino;
 
     public Destino(String destino) {
-        this.destino = Objects.requireNonNull(destino,"La Destino es requerida");
+        this.destino = Objects.requireNonNull(destino,"El Destino es requerida");
     }
 
     @Override

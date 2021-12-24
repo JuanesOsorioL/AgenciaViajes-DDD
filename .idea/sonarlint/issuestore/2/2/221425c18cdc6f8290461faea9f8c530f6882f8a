@@ -1,0 +1,8 @@
+
+I
+java:S1172",Remove this unused method parameter "autor".(•Ãµü8¹­äÆŞ/
+:
+java:S1700	"Rename field "capacidad"(‹£é„øÿÿÿÿ8”ûãÆŞ/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÅÎƒ
+„
+java:S4165"gRemove this useless assignment; "capacidad" already holds the assigned value along all execution paths.(¨“¨8ÚêäÆŞ/

@@ -5,7 +5,7 @@ import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.Transporte.commands.CrearTransporte;
 import co.com.sofka.domain.Transporte.event.TransporteCreado;
-import co.com.sofka.domain.Transporte.value.TransporteId;
+import co.com.sofka.domain.Transporte.value.transporteIdanterior;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -15,7 +15,7 @@ class CrearTransporteUseCaseTest {
     public void crearTransporte(){
 
         //arrange
-        TransporteId trasporteId=TransporteId.of("aaaaa");
+        transporteIdanterior trasporteId= transporteIdanterior.of("aaaaa");
         Nombre nombre=new Nombre("nombre");
         var command=new CrearTransporte(trasporteId,nombre);
         var usecase= new CrearTransporteUseCase();

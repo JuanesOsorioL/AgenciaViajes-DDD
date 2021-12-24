@@ -10,24 +10,24 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
-public class Transporte extends AggregateEvent<TransporteId> {
+public class Transporte extends AggregateEvent<transporteIdanterior> {
 
     protected Nombre nombre;
     protected Set<Guia> guia;
     protected Set<Avion> avion;
     protected Set<Carro> carro;
 
-    public Transporte(TransporteId transporteId, Nombre nombre) {
+    public Transporte(transporteIdanterior transporteId, Nombre nombre) {
         super(transporteId);
         appendChange(new TransporteCreado(transporteId,nombre)).apply();
     }
 
-    public Transporte(TransporteId transporteId) {
+    public Transporte(transporteIdanterior transporteId) {
         super(transporteId);
         subscribe(new TransporteChange(this));
     }
 
-    public static Transporte from(TransporteId transporteId, List<DomainEvent> events){
+    public static Transporte from(transporteIdanterior transporteId, List<DomainEvent> events){
         var transporte = new Transporte(transporteId);
         events.forEach(transporte::applyEvent);
         return transporte;
@@ -45,7 +45,7 @@ public class Transporte extends AggregateEvent<TransporteId> {
         appendChange(new GuiaAgregado(guiaId,nombre,edad,celular)).apply();
     }
 
-    public void modificarNombre(TransporteId transporteId, Nombre nombre){
+    public void modificarNombre(transporteIdanterior transporteId, Nombre nombre){
         appendChange(new NombreModificado(transporteId,nombre)).apply();
     }
 
