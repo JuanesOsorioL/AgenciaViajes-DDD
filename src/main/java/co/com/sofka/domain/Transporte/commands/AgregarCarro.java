@@ -3,17 +3,24 @@ package co.com.sofka.domain.Transporte.commands;
 import co.com.sofka.General.Value.Capacidad;
 import co.com.sofka.General.Value.Modelo;
 import co.com.sofka.domain.Transporte.value.CarroId;
+import co.com.sofka.domain.Transporte.value.TransporteId;
 import co.com.sofka.domain.generic.Command;
 
 public class AgregarCarro extends Command {
-    private CarroId carroId;
-    private Modelo modelo;
-    private Capacidad capacidad;
+    private final TransporteId transporteId;
+    private final CarroId carroId;
+    private final Modelo modelo;
+    private final Capacidad capacidad;
 
-    public AgregarCarro(CarroId carroId, Modelo modelo, Capacidad capacidad) {
+    public AgregarCarro(TransporteId transporteId, CarroId carroId, Modelo modelo, Capacidad capacidad) {
+        this.transporteId = transporteId;
         this.carroId = carroId;
         this.modelo = modelo;
         this.capacidad = capacidad;
+    }
+
+    public TransporteId getTransporteId() {
+        return transporteId;
     }
 
     public CarroId getCarroId() {

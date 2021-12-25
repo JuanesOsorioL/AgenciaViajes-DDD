@@ -1,33 +1,33 @@
 package co.com.sofka.domain.Hotel.Entity;
 
-import co.com.sofka.General.Value.Nombre;
 import co.com.sofka.domain.Hotel.value.AlimentacionId;
 import co.com.sofka.domain.Hotel.value.FranjaHoraria;
+import co.com.sofka.domain.Hotel.value.Tipo;
 import co.com.sofka.domain.generic.Entity;
 
 import java.util.Objects;
 
 public class Alimentacion extends Entity<AlimentacionId> {
 
-    private Nombre nombre;
+    private Tipo tipo;
     private FranjaHoraria franjaHoraria;
 
-    public Alimentacion(AlimentacionId alimentacionId ,Nombre nombre, FranjaHoraria franjaHoraria) {
+    public Alimentacion(AlimentacionId alimentacionId , Tipo tipo, FranjaHoraria franjaHoraria) {
         super(alimentacionId);
-        this.nombre= Objects.requireNonNull(nombre);
+        this.tipo= Objects.requireNonNull(tipo);
         this.franjaHoraria= Objects.requireNonNull(franjaHoraria);
     }
 
-    public void ModificarNombre(Nombre nombre){
-        this.nombre = Objects.requireNonNull(nombre);
+    public void ModificarTipo(Tipo tipo){
+        this.tipo = Objects.requireNonNull(tipo);
     }
 
     public void modificarFranjaHoraria(FranjaHoraria franjaHoraria){
         this.franjaHoraria = Objects.requireNonNull(franjaHoraria);
     }
 
-    public Nombre nombre() {
-        return nombre;
+    public Tipo tipo() {
+        return tipo;
     }
 
     public FranjaHoraria franjaHoraria() {

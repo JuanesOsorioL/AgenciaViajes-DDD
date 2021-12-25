@@ -1,8 +1,2 @@
 
-N
-java:S1172",Remove this unused method parameter "autor".(ğîâÃûÿÿÿÿ8¦ŸàÆŞ/
-2
-java:S1700	"Rename field "modelo"(ˆÙÌå8²îßÆŞ/
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÅÎƒ
-†
-java:S4165"dRemove this useless assignment; "modelo" already holds the assigned value along all execution paths.(¯øõëÿÿÿÿÿ8«ŸàÆŞ/

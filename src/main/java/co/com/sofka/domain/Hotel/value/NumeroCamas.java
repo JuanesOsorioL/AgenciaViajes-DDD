@@ -8,7 +8,7 @@ public class NumeroCamas implements ValueObject<Integer> {
     private Integer numeroCamas;
 
     public NumeroCamas(Integer numeroCamas) {
-        this.numeroCamas = Objects.requireNonNull(numeroCamas,"El NumeroCamas es requerida");
+        this.numeroCamas = Objects.requireNonNull(numeroCamas,"El Numero de Camas es requerida");
     }
 
     @Override

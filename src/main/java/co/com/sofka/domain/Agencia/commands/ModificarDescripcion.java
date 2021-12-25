@@ -5,6 +5,7 @@ import co.com.sofka.domain.Agencia.value.Descripcion;
 import co.com.sofka.domain.generic.Command;
 
 public class ModificarDescripcion extends Command {
+
     private final AgenciaId agenciaId;
     private final Descripcion descripcion;
 

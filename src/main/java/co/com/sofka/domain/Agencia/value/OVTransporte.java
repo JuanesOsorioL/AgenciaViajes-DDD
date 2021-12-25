@@ -44,10 +44,6 @@ public class OVTransporte implements ValueObject<OVTransporte.Properties> {
         };
     }
 
-   /* public OVTransporte(String descripcion) {
-        this.descripcion = Objects.requireNonNull(descripcion,"La Descripcion es requerida");
-    }*/
-
     public interface Properties{
         String TransporteID();
         String nombreTransporte();
