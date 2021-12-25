@@ -4,11 +4,11 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class NombreHotel implements ValueObject<String> {
+public class Nombre implements ValueObject<String> {
 
     private final String value;
 
-    public NombreHotel(String value){
+    public Nombre(String value){
         this.value = Objects.requireNonNull(value);
         if(this.value.isBlank()){
             throw new IllegalArgumentException("El nombre hotel no puede estar vacío");
@@ -27,7 +27,7 @@ public class NombreHotel implements ValueObject<String> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        NombreHotel that = (NombreHotel) o;
+        Nombre that = (Nombre) o;
         return Objects.equals(value, that.value);
     }
 

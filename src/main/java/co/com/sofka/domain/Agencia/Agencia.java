@@ -68,6 +68,15 @@ public class Agencia extends AggregateEvent<AgenciaId> {
         appendChange(new AsesorCreado(asesorId,nombre,celular,correo,funcion)).apply();
     }
 
+    public void crearCliente(Nombre nombre, Celular celular, Correo correo, NumeroPersonas NumeroPersonas){
+        var clienteId = new ClienteId();
+        Objects.requireNonNull(nombre);
+        Objects.requireNonNull(celular);
+        Objects.requireNonNull(correo);
+        Objects.requireNonNull(NumeroPersonas);
+        appendChange(new ClienteCreado(clienteId,nombre,celular,correo,NumeroPersonas)).apply();
+    }
+
     public void modificarNombreAsesor(AsesorId asesorId ,Nombre nombre){
         appendChange(new NombreAsesorModificado(asesorId,nombre)).apply();
     }

@@ -11,15 +11,15 @@ public class Descripcion implements ValueObject<String> {
     public Descripcion(String value){
         this.value = Objects.requireNonNull(value);
         if(this.value.isBlank()){
-            throw new IllegalArgumentException("El comentario no puede estar vacío");
+            throw new IllegalArgumentException("La descripcion no puede estar vacío");
         }
 
-        if(this.value.length()<50){
-            throw new IllegalArgumentException("El comentario no puede tener menos de cincuenta caracteres");
+        if(this.value.length()<30){
+            throw new IllegalArgumentException("La descripcion no puede tener menos de treinta caracteres");
         }
 
         if(this.value.length()>3000){
-            throw new IllegalArgumentException("El comentario no puede tener más de tres mil caracteres");
+            throw new IllegalArgumentException("La descripcion no puede tener más de tres mil caracteres");
         }
     }
 

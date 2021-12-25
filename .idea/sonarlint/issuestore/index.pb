@@ -1,12 +1,8 @@
 
 n
 >src/main/java/co/com/sofka/domain/Transporte/value/GuiaId.java,a\1\a178d19e08937fa5ed3be1f672fa9ed17f00ed3c
-o
-?src/main/java/co/com/sofka/domain/Transporte/value/CarroId.java,2\c\2ca08eb80072e86c03ac8a640f095fe33a9bd3fc
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-l
-<src/main/java/co/com/sofka/domain/Transporte/value/Edad.java,2\5\25441e3cd547529388cda90fa485b0aabbab2f92
 o
 ?src/main/java/co/com/sofka/domain/Transporte/value/AvionId.java,9\b\9b2b00ed9e54ba7bc2da3c467eea877fbb3a521c
 :
@@ -15,8 +11,6 @@ o
 l
 <src/main/java/co/com/sofka/domain/Agencia/Entity/Asesor.java,4\3\439ad69978d860699e4a7529b39d17b0e0895500
 m
-=src/main/java/co/com/sofka/domain/Agencia/Entity/Cliente.java,b\9\b913f672f95d8637c898b349d807040da01efd90
-m
 =src/main/java/co/com/sofka/domain/Transporte/Entity/Guia.java,5\f\5f138d8ff354a580083c7dd87feaadd7b37e3680
 n
 >src/main/java/co/com/sofka/domain/Transporte/Entity/Carro.java,0\3\03764c2d24783d08795fa316299a4bb91910841c
@@ -24,8 +18,6 @@ n
 >src/main/java/co/com/sofka/domain/Transporte/Entity/Avion.java,d\3\d30ba6ceace817af8b38a11365a59e9f83d9f7ef
 u
 Esrc/main/java/co/com/sofka/domain/Agencia/Entity/ServicioAgencia.java,7\d\7dd75ac9b29aecf6ab9020d5644dc9da493d12fa
-m
-=src/main/java/co/com/sofka/domain/Agencia/value/AsesorId.java,e\1\e1a0b073d120c698648323305239da157774668b
 n
 >src/main/java/co/com/sofka/domain/Agencia/value/ClienteId.java,7\6\7658dd3e025a4e052ec0445a638a5c63468bf198
 q
@@ -56,8 +48,6 @@ x
 Hsrc/main/java/co/com/sofka/domain/Transporte/event/TransporteCreado.java,f\1\f134825e9ea8558ce38b34b842e247c6513a1a24
 x
 Hsrc/main/java/co/com/sofka/domain/Transporte/event/NombreModificado.java,4\8\488dbfabb7db01e8d8d791cc40e7cc669934a997
-q
-Asrc/main/java/co/com/sofka/domain/Agencia/event/AsesorCreado.java,b\6\b621b2752901a0a836f484355ad7a81f7aefec94
 |
 Lsrc/main/java/co/com/sofka/domain/Agencia/event/CelularAsesorModificado.java,c\e\ceb65f069da5169d58dfc50fe193aa48475ebbc7
 }
@@ -88,8 +78,6 @@ Nsrc/main/java/co/com/sofka/domain/Agencia/commands/ModificarCelularAsesor.java
 Nsrc/main/java/co/com/sofka/domain/Agencia/commands/ModificarCorreoCliente.java,a\6\a67cb44602ec63abfc4d9f78011f466cb625cac2
 |
 Lsrc/main/java/co/com/sofka/domain/Agencia/commands/ModificarDescripcion.java,f\b\fbc5dfdd51a4ea5bad3867ad8bf43d7d2e49aff4
-s
-Csrc/main/java/co/com/sofka/domain/Agencia/commands/CrearAsesor.java,7\6\76dfe3dd227320cc643c48ec87bba381dc9d15dc
 ‹
 [src/main/java/co/com/sofka/domain/Agencia/commands/ModificarDescripcionServicioAgencia.java,a\a\aadd9950dd6a140f3ee2237e960bdf5e523b74c9
 x
@@ -126,8 +114,6 @@ z
 Jsrc/main/java/co/com/sofka/domain/Transporte/commands/ModificarNombre.java,d\4\d4982baf6aa8645cd5924354f865a95894a9c4b4
 u
 Esrc/main/java/co/com/sofka/domain/Transporte/event/AvionAgregado.java,d\e\def942fb5ae9edc052d68c67d44a2de4c0de8ac3
-~
-Nsrc/main/java/co/com/sofka/domain/Agencia/commands/AgregarServicioAgencia.java,2\c\2c8c31fd5cc8526073f5868b723ab7e25946caca
 q
 Asrc/main/java/co/com/sofka/domain/Agencia/value/OVTransporte.java,8\1\8154ea0e839e3ccb122d61652ae142f983da544a
 v
@@ -138,10 +124,6 @@ z
 Jsrc/main/java/co/com/sofka/domain/Hotel/commands/ModificarNombreHotel.java,3\6\36fe522b4126550bbea7f7440ac7c3012f3d6393
 p
 @src/main/java/co/com/sofka/domain/Hotel/Entity/Alimentacion.java,3\c\3c4bd8d50dd6ad647773f02bfaa45245dd399aaf
-n
->src/main/java/co/com/sofka/domain/Hotel/event/HotelCreado.java,c\a\ca5c78668cd7fd761d35a16acdc46a7109159548
-p
-@src/main/java/co/com/sofka/domain/Hotel/commands/CrearHotel.java,d\e\de17a8d9be58f1fd59c044f68439927b45e4b0f9
 u
 Esrc/main/java/co/com/sofka/domain/Hotel/event/HabitacionAgregada.java,6\f\6f4dd8709773725ba7a7c63391e61bb738deb02c
 n
@@ -154,14 +136,6 @@ z
 Jsrc/main/java/co/com/sofka/domain/Hotel/commands/ModificarDescripcion.java,0\9\09e705e417ec6a2532535451405d26af44cc2a0b
 ‡
 Wsrc/main/java/co/com/sofka/domain/Hotel/commands/ModificarDescripcionServicioHotel.java,e\8\e8664ec042172f7df9f3781e34309aaec9a46133
-x
-Hsrc/main/java/co/com/sofka/domain/Hotel/event/ServicioHotelAgregado.java,b\6\b6151fa7fd8f77270f0fa49220a3eb1b2007cfb1
-y
-Isrc/main/java/co/com/sofka/domain/Hotel/commands/AgregarAlimentacion.java,8\1\8132a9aa8b1f5d4ee1ef54d1a89d2df5d3e3e7f0
-r
-Bsrc/main/java/co/com/sofka/domain/Transporte/TransporteChange.java,9\4\94aca027a400b41be83457b0b57d02b2aea30ea1
-x
-Hsrc/main/java/co/com/sofka/domain/Hotel/event/NombreHotelModificado.java,0\1\01bd8297c07369df0c1b51bb30019e0fe53e075b
 w
 Gsrc/main/java/co/com/sofka/domain/Hotel/commands/AgregarHabitacion.java,3\3\334852c2adaa5fd0e04822c641dd3c713c71cb12
 ‚
@@ -174,5 +148,3 @@ Tsrc/main/java/co/com/sofka/domain/Hotel/commands/ModificarNumeroCamasHabitacion
 Msrc/main/java/co/com/sofka/domain/Hotel/event/TipoAlimentacionModificado.java,0\6\06ecfa1d277602de5a619c15e5629aef5db414d8
 
 Osrc/main/java/co/com/sofka/domain/Hotel/commands/ModificarTipoAlimentacion.java,e\8\e87c46f7cd5563a8aa46a625ac76a62378559a0f
-h
-8src/main/java/co/com/sofka/domain/Hotel/HotelChange.java,b\0\b0b022b1b9fed69920051e96d2ae333ee3ce98cb

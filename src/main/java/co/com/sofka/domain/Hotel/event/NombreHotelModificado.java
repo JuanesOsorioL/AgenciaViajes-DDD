@@ -1,24 +1,25 @@
 package co.com.sofka.domain.Hotel.event;
 
+import co.com.sofka.General.Value.Nombre;
 import co.com.sofka.domain.Hotel.value.HotelId;
-import co.com.sofka.domain.Hotel.value.NombreHotel;
+
 import co.com.sofka.domain.generic.DomainEvent;
 
 public class NombreHotelModificado extends DomainEvent {
     private final HotelId hotelId;
-    private final NombreHotel nombreHotel;
+    private final Nombre nombre;
 
-    public NombreHotelModificado(HotelId hotelId, NombreHotel nombreHotel) {
+    public NombreHotelModificado(HotelId hotelId, Nombre nombre) {
         super("sofka.Hotel.NombreHotelModificado");
         this.hotelId = hotelId;
-        this.nombreHotel = nombreHotel;
+        this.nombre = nombre;
     }
 
     public HotelId getHotelId() {
         return hotelId;
     }
 
-    public NombreHotel getNombreHotel() {
-        return nombreHotel;
+    public Nombre getNombre() {
+        return nombre;
     }
 }

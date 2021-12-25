@@ -1,12 +1,14 @@
 package co.com.sofka.domain.Hotel;
 
-import co.com.sofka.General.Value.Nombre;
 import co.com.sofka.General.Value.Descripcion;
+import co.com.sofka.General.Value.Nombre;
 import co.com.sofka.domain.Hotel.Entity.Alimentacion;
 import co.com.sofka.domain.Hotel.Entity.Habitacion;
 import co.com.sofka.domain.Hotel.Entity.ServicioHotel;
 import co.com.sofka.domain.Hotel.event.*;
+
 import co.com.sofka.domain.Hotel.value.*;
+
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 
@@ -17,16 +19,16 @@ import java.util.Set;
 public class Hotel extends AggregateEvent<HotelId> {
 
     protected HotelId hotelId;
-    protected NombreHotel nombreHotel;
+    protected Nombre nombre;
     protected Set<ServicioHotel> servicioHotel;
     protected Set<Habitacion> habitacion;
     protected Set<Alimentacion> alimentacion;
     protected Descripcion descripcion;
 
 
-    public Hotel(HotelId hotelId, NombreHotel nombreHotel,Descripcion descripcion) {
+    public Hotel(HotelId hotelId, Nombre nombre, Descripcion descripcion) {
         super(hotelId);
-        appendChange(new HotelCreado(hotelId,nombreHotel,descripcion)).apply();
+        appendChange(new HotelCreado(hotelId,nombre,descripcion)).apply();
     }
 
     public Hotel(HotelId hotelId) {
@@ -34,14 +36,15 @@ public class Hotel extends AggregateEvent<HotelId> {
         subscribe(new HotelChange(this));
     }
 
+
     public static Hotel from(HotelId hotelId, List<DomainEvent> events){
         var hotel = new Hotel(hotelId);
         events.forEach(hotel::applyEvent);
         return hotel;
     }
 
-    public void modificarNombreHotel(HotelId hotelId, NombreHotel nombreHotel){
-        appendChange(new NombreHotelModificado(hotelId,nombreHotel)).apply();
+    public void modificarNombreHotel(HotelId hotelId, Nombre nombre){
+        appendChange(new NombreHotelModificado(hotelId,nombre)).apply();
     }
 
     public void agregarServicioHotel(Nombre nombre, Descripcion descripcion){

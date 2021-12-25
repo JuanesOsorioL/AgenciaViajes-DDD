@@ -12,7 +12,7 @@ public class CrearHotelUseCase extends UseCase<RequestCommand<CrearHotel>, Respo
     public void executeUseCase(RequestCommand<CrearHotel> RequestCommand) {
         var command=RequestCommand.getCommand();
         var hotel=new Hotel(command.getHotelId(),
-                command.getNombreHotel(),
+                command.getNombre(),
                 command.getDescripcion());
         emit().onResponse(new ResponseEvents(hotel.getUncommittedChanges()));
     }

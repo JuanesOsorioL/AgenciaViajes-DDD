@@ -16,7 +16,7 @@ class CrearTransporteUseCaseTest {
 
         //arrange
         TransporteId trasporteId= TransporteId.of("aaaaa");
-        Nombre nombre=new Nombre("nombre");
+        Nombre nombre=new Nombre("Tourtrans");
         var command=new CrearTransporte(trasporteId,nombre);
         var usecase= new CrearTransporteUseCase();
 
@@ -28,6 +28,7 @@ class CrearTransporteUseCaseTest {
         //assets
         TransporteCreado event=(TransporteCreado) events.getDomainEvents().get(0);
         Assertions.assertEquals("aaaaa",event.aggregateRootId());
+        Assertions.assertEquals("Tourtrans",event.getNombre().value());
     }
 
 }

@@ -9,6 +9,12 @@ public class NumeroCamas implements ValueObject<Integer> {
 
     public NumeroCamas(Integer numeroCamas) {
         this.numeroCamas = Objects.requireNonNull(numeroCamas,"El Numero de Camas es requerida");
+        if(this.numeroCamas<=0){
+            throw new IllegalArgumentException("El Numero de camas no puede se cero o negativo");
+        }
+        if(this.numeroCamas>10){
+            throw new IllegalArgumentException("El Numero de camas no puede se mayor a 10");
+        }
     }
 
     @Override

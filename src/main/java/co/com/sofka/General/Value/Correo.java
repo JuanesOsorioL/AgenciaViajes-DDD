@@ -6,39 +6,33 @@ import java.util.Objects;
 
 public class Correo implements ValueObject<String> {
 
-    private final String celular;
+    private final String correo;
 
-    public Correo(String celular){
-        this.celular = Objects.requireNonNull(celular);
-        /*if(this.celular.isBlank()){
-            throw new IllegalArgumentException("El teléfono no puede estar vacío");
+    public Correo(String correo){
+        this.correo = Objects.requireNonNull(correo);
+        if(this.correo.isBlank()){
+            throw new IllegalArgumentException("El correo no puede estar vacío");
         }
-        if(this.celular.length()<7){
-            throw new IllegalArgumentException("El teléfono no puede tener menos de siete digitos");
+        if (!this.correo.matches("^\\w+([.-]?\\w+)@\\w+([.-]?\\w+)(.\\w{2,3})+$")) {
+            throw new IllegalArgumentException("El correo es invalido");
         }
-        if(this.celular.length()>10){
-            throw new IllegalArgumentException("El teléfono no puede tener más de diez digitos");
-        }*/
-        /*if (!this.celular.matches("[0-9]*")){
-            throw new IllegalArgumentException("El teléfono sólo puede incluir números");
-        }*/
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Correo correo = (Correo) o;
-        return Objects.equals(celular, correo.celular);
+        Correo correo1 = (Correo) o;
+        return Objects.equals(correo, correo1.correo);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(celular);
+        return Objects.hash(correo);
     }
 
     @Override
     public String value() {
-        return celular;
+        return correo;
     }
 }

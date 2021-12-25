@@ -8,8 +8,8 @@ public class Capacidad implements ValueObject<String> {
 
     private String capacidad;
 
-    public Capacidad(String autor) {
-        this.capacidad = Objects.requireNonNull(capacidad,"El Capacidad es requerido");
+    public Capacidad(String capacidad) {
+        this.capacidad = Objects.requireNonNull(capacidad,"La Capacidad es requerida");
     }
 
     @Override

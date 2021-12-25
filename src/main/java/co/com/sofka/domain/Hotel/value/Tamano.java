@@ -4,15 +4,24 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class Tamano implements ValueObject<String> {
-    private String tamano;
+public class Tamano implements ValueObject<Tamano.Valor> {
 
-    public Tamano(String tamano) {
-        this.tamano = Objects.requireNonNull(tamano,"El Tamaño es requerido");
+    private final Valor value;
+
+    public Tamano(Valor valor) {
+        this.value = valor;
     }
 
     @Override
-    public String value() {
-        return tamano;
+    public Valor value() {
+        return value;
     }
+
+    public enum Valor {
+        SENCILLA,
+        DOBLE,
+        EXTRADOBLE
+    }
+
+
 }

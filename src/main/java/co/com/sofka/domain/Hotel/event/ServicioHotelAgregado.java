@@ -11,11 +11,12 @@ public class ServicioHotelAgregado extends DomainEvent {
     private final Descripcion descripcion;
 
     public ServicioHotelAgregado(ServicioHotelId servicioHotelId, Nombre nombre, Descripcion descripcion) {
-        super("sofka.Hotel.NombreHotelModificado");
+        super("sofka.Hotel.ServicioHotelAgregado");
         this.servicioHotelId = servicioHotelId;
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
+
 
     public ServicioHotelId getServicioHotelId() {
         return servicioHotelId;

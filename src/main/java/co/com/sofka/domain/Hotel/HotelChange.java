@@ -13,7 +13,7 @@ public class HotelChange extends EventChange {
 
         apply((HotelCreado event) -> {
             hotel.hotelId=event.getHotelId();
-            hotel.nombreHotel= event.getNombreHotel();
+            hotel.nombre = event.getNombre();
             hotel.descripcion= event.getDescripcion();
             hotel.servicioHotel = new HashSet<>();
             hotel.habitacion = new HashSet<>();
@@ -21,7 +21,7 @@ public class HotelChange extends EventChange {
         });
 
         apply((NombreHotelModificado event) -> {
-            hotel.nombreHotel=event.getNombreHotel();
+            hotel.nombre =event.getNombre();
         });
 
         apply((ServicioHotelAgregado event) -> {
