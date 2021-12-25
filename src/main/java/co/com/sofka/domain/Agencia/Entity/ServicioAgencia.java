@@ -1,5 +1,6 @@
 package co.com.sofka.domain.Agencia.Entity;
 
+import co.com.sofka.General.Value.Descripcion;
 import co.com.sofka.General.Value.Nombre;
 import co.com.sofka.domain.Agencia.value.*;
 import co.com.sofka.domain.generic.Entity;

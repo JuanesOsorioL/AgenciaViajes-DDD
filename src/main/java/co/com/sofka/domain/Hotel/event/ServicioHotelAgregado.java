@@ -1,7 +1,7 @@
 package co.com.sofka.domain.Hotel.event;
 
 import co.com.sofka.General.Value.Nombre;
-import co.com.sofka.domain.Agencia.value.Descripcion;
+import co.com.sofka.General.Value.Descripcion;
 import co.com.sofka.domain.Hotel.value.ServicioHotelId;
 import co.com.sofka.domain.generic.DomainEvent;
 

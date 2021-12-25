@@ -3,6 +3,7 @@ package co.com.sofka.domain.Agencia;
 
 import co.com.sofka.General.Value.Celular;
 import co.com.sofka.General.Value.Correo;
+import co.com.sofka.General.Value.Descripcion;
 import co.com.sofka.General.Value.Nombre;
 import co.com.sofka.domain.Agencia.Entity.Asesor;
 import co.com.sofka.domain.Agencia.Entity.Cliente;

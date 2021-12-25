@@ -2,7 +2,7 @@ package co.com.sofka.domain.Agencia.commands;
 
 import co.com.sofka.General.Value.Nombre;
 import co.com.sofka.domain.Agencia.value.AgenciaId;
-import co.com.sofka.domain.Agencia.value.Descripcion;
+import co.com.sofka.General.Value.Descripcion;
 import co.com.sofka.domain.Agencia.value.ServicioAgenciaId;
 import co.com.sofka.domain.generic.Command;
 

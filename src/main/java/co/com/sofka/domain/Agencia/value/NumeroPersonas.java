@@ -3,7 +3,7 @@ package co.com.sofka.domain.Agencia.value;
 import co.com.sofka.domain.generic.ValueObject;
 import java.util.Objects;
 
-public class NumeroPersonas implements ValueObject<Integer> {
+public class NumeroPersonas implements ValueObject<String> {
 
     private final String NumeroPersonas;
 
@@ -37,7 +37,7 @@ public class NumeroPersonas implements ValueObject<Integer> {
     }
 
     @Override
-    public Integer value() {
-        return null;
+    public String value() {
+        return NumeroPersonas;
     }
 }

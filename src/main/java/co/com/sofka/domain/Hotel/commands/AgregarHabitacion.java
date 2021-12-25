@@ -1,6 +1,6 @@
 package co.com.sofka.domain.Hotel.commands;
 
-import co.com.sofka.domain.Agencia.value.Descripcion;
+import co.com.sofka.General.Value.Descripcion;
 import co.com.sofka.domain.Hotel.value.HabitacionId;
 import co.com.sofka.domain.Hotel.value.HotelId;
 import co.com.sofka.domain.Hotel.value.NumeroCamas;

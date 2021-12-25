@@ -1,6 +1,6 @@
 package co.com.sofka.domain.Agencia.event;
 
-import co.com.sofka.domain.Agencia.value.Descripcion;
+import co.com.sofka.General.Value.Descripcion;
 import co.com.sofka.domain.Agencia.value.ServicioAgenciaId;
 import co.com.sofka.domain.generic.DomainEvent;
 

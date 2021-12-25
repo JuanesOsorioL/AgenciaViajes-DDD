@@ -1,7 +1,7 @@
 package co.com.sofka.domain.Hotel;
 
 import co.com.sofka.General.Value.Nombre;
-import co.com.sofka.domain.Agencia.value.Descripcion;
+import co.com.sofka.General.Value.Descripcion;
 import co.com.sofka.domain.Hotel.Entity.Alimentacion;
 import co.com.sofka.domain.Hotel.Entity.Habitacion;
 import co.com.sofka.domain.Hotel.Entity.ServicioHotel;

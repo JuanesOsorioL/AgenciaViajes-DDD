@@ -1,4 +1,4 @@
-package co.com.sofka.domain.Agencia.value;
+package co.com.sofka.General.Value;
 
 import co.com.sofka.domain.generic.ValueObject;
 
@@ -14,8 +14,8 @@ public class Descripcion implements ValueObject<String> {
             throw new IllegalArgumentException("El comentario no puede estar vacío");
         }
 
-        if(this.value.length()<100){
-            throw new IllegalArgumentException("El comentario no puede tener menos de cien caracteres");
+        if(this.value.length()<50){
+            throw new IllegalArgumentException("El comentario no puede tener menos de cincuenta caracteres");
         }
 
         if(this.value.length()>3000){
