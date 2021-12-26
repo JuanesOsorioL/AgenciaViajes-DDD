@@ -8,6 +8,7 @@ import co.com.sofka.domain.Transporte.commands.AgregarAvion;
 import co.com.sofka.domain.Transporte.event.AvionAgregado;
 import co.com.sofka.domain.Transporte.value.AvionId;
 import co.com.sofka.domain.Transporte.value.TransporteId;
+import co.com.sofka.usecase.ByCommands.AgregarAvionTransporteCaseUse;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

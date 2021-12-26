@@ -1,4 +1,4 @@
-package co.com.sofka.usecase;
+package co.com.sofka.usecase.ByCommands;
 
 
 import co.com.sofka.business.generic.UseCase;

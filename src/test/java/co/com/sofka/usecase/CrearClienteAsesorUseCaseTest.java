@@ -8,6 +8,7 @@ import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.Agencia.commands.CrearCliente;
 import co.com.sofka.domain.Agencia.event.ClienteCreado;
 import co.com.sofka.domain.Agencia.value.*;
+import co.com.sofka.usecase.ByCommands.CrearClienteAsesorUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

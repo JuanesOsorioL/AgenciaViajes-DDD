@@ -8,6 +8,7 @@ import co.com.sofka.domain.Transporte.commands.AgregarCarro;
 import co.com.sofka.domain.Transporte.event.CarroAgregado;
 import co.com.sofka.domain.Transporte.value.CarroId;
 import co.com.sofka.domain.Transporte.value.TransporteId;
+import co.com.sofka.usecase.ByCommands.AgregarCarroTransporteUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

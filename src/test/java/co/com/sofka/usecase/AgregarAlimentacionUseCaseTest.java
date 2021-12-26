@@ -8,6 +8,7 @@ import co.com.sofka.domain.Hotel.value.AlimentacionId;
 import co.com.sofka.domain.Hotel.value.FranjaHoraria;
 import co.com.sofka.domain.Hotel.value.HotelId;
 import co.com.sofka.domain.Hotel.value.Tipo;
+import co.com.sofka.usecase.ByCommands.AgregarAlimentacionUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

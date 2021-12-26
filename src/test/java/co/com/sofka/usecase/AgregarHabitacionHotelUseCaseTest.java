@@ -6,6 +6,7 @@ import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.Hotel.commands.AgregarHabitacion;
 import co.com.sofka.domain.Hotel.event.HabitacionAgregada;
 import co.com.sofka.domain.Hotel.value.*;
+import co.com.sofka.usecase.ByCommands.AgregarHabitacionHotelUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

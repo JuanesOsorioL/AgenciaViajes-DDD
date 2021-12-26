@@ -8,6 +8,7 @@ import co.com.sofka.domain.Hotel.commands.CrearHotel;
 import co.com.sofka.domain.Hotel.event.HotelCreado;
 import co.com.sofka.domain.Hotel.value.HotelId;
 
+import co.com.sofka.usecase.ByCommands.CrearHotelUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

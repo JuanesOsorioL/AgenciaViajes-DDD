@@ -9,6 +9,7 @@ import co.com.sofka.domain.Transporte.event.GuiaAgregado;
 import co.com.sofka.domain.Transporte.value.Edad;
 import co.com.sofka.domain.Transporte.value.GuiaId;
 import co.com.sofka.domain.Transporte.value.TransporteId;
+import co.com.sofka.usecase.ByCommands.AgregarGuiaTransporteUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

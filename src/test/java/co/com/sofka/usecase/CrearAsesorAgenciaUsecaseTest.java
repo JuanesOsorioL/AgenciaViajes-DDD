@@ -10,6 +10,7 @@ import co.com.sofka.domain.Agencia.event.AsesorCreado;
 import co.com.sofka.domain.Agencia.value.AgenciaId;
 import co.com.sofka.domain.Agencia.value.AsesorId;
 import co.com.sofka.domain.Agencia.value.Funcion;
+import co.com.sofka.usecase.ByCommands.CrearAsesorAgenciaUsecase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

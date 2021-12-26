@@ -8,6 +8,7 @@ import co.com.sofka.domain.Agencia.event.AgenciaCreado;
 import co.com.sofka.domain.Agencia.value.AgenciaId;
 import co.com.sofka.General.Value.Descripcion;
 import co.com.sofka.domain.Agencia.value.Destino;
+import co.com.sofka.usecase.ByCommands.CrearAgenciaUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
