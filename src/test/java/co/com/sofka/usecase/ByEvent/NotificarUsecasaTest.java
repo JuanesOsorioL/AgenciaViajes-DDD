@@ -1,7 +1,8 @@
 package co.com.sofka.usecase.ByEvent;
 
-import co.com.sofka.General.Value.Descripcion;
-import co.com.sofka.General.Value.Nombre;
+
+import co.com.sofka.domain.General.Descripcion;
+import co.com.sofka.domain.General.Nombre;
 import co.com.sofka.business.generic.ServiceBuilder;
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.TriggeredEvent;
@@ -13,7 +14,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.ArgumentMatchers.refEq;
 import static org.mockito.Mockito.when;

@@ -1,6 +1,6 @@
 package co.com.sofka.domain.Transporte.commands;
 
-import co.com.sofka.General.Value.Modelo;
+import co.com.sofka.domain.General.Modelo;
 import co.com.sofka.domain.Transporte.value.AvionId;
 import co.com.sofka.domain.Transporte.value.TransporteId;
 import co.com.sofka.domain.generic.Command;

@@ -20,7 +20,7 @@ public class AgenciateChange extends EventChange {
 
         apply((ServicioAgenciaAgregado event) -> {
             agencia.servicioAgencias.add(new ServicioAgencia(
-                    event.getId(),
+                    event.getAgenciaId(),
                     event.getNombre(),
                     event.getDescripcion()));
         });
@@ -75,9 +75,5 @@ public class AgenciateChange extends EventChange {
         apply((CorreoClienteModificado event) -> {
             agencia.cliente.modificarCorreo(event.getCorreo());
         });
-
-
-
-
     }
 }

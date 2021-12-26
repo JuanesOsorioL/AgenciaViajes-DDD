@@ -1,6 +1,7 @@
 package co.com.sofka.domain.Transporte.event;
 
-import co.com.sofka.General.Value.Celular;
+
+import co.com.sofka.domain.General.Celular;
 import co.com.sofka.domain.Transporte.value.GuiaId;
 import co.com.sofka.domain.generic.DomainEvent;
 

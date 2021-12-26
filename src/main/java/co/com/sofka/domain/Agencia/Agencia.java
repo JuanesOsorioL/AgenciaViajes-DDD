@@ -1,10 +1,10 @@
 package co.com.sofka.domain.Agencia;
 
 
-import co.com.sofka.General.Value.Celular;
-import co.com.sofka.General.Value.Correo;
-import co.com.sofka.General.Value.Descripcion;
-import co.com.sofka.General.Value.Nombre;
+import co.com.sofka.domain.General.Celular;
+import co.com.sofka.domain.General.Correo;
+import co.com.sofka.domain.General.Descripcion;
+import co.com.sofka.domain.General.Nombre;
 import co.com.sofka.domain.Agencia.Entity.Asesor;
 import co.com.sofka.domain.Agencia.Entity.Cliente;
 import co.com.sofka.domain.Agencia.Entity.ServicioAgencia;
@@ -46,21 +46,27 @@ public class Agencia extends AggregateEvent<AgenciaId> {
         return agencia;
     }
 
-    public void agregarServicioAgencia( Nombre nombre, Descripcion descripcion){
-        var id = new ServicioAgenciaId();
-        appendChange(new ServicioAgenciaAgregado(id,nombre,descripcion)).apply();
+    public void agregarServicioAgencia(ServicioAgenciaId servicioAgenciaId, Nombre nombre, Descripcion descripcion){
+        Objects.requireNonNull(servicioAgenciaId);
+        Objects.requireNonNull(nombre);
+        Objects.requireNonNull(descripcion);
+        appendChange(new ServicioAgenciaAgregado(servicioAgenciaId,nombre,descripcion)).apply();
     }
 
     public void modificarDescripcion(AgenciaId agenciaId,Descripcion descripcion){
+        Objects.requireNonNull(agenciaId);
+        Objects.requireNonNull(descripcion);
         appendChange(new DescripcionModificada(agenciaId,descripcion)).apply();
     }
 
     public void modificarDestino(AgenciaId agenciaId,Destino destino){
+        Objects.requireNonNull(agenciaId);
+        Objects.requireNonNull(destino);
         appendChange(new DestinoModificado(agenciaId,destino)).apply();
     }
 
-    public void crearAsesor(Nombre nombre, Celular celular,Correo correo,Funcion funcion){
-        var asesorId = new AsesorId();
+    public void crearAsesor(AsesorId asesorId, Nombre nombre, Celular celular, Correo correo, Funcion funcion){
+        Objects.requireNonNull(asesorId);
         Objects.requireNonNull(nombre);
         Objects.requireNonNull(celular);
         Objects.requireNonNull(correo);
@@ -68,8 +74,8 @@ public class Agencia extends AggregateEvent<AgenciaId> {
         appendChange(new AsesorCreado(asesorId,nombre,celular,correo,funcion)).apply();
     }
 
-    public void crearCliente(Nombre nombre, Celular celular, Correo correo, NumeroPersonas NumeroPersonas){
-        var clienteId = new ClienteId();
+    public void crearCliente(ClienteId clienteId,Nombre nombre, Celular celular, Correo correo, NumeroPersonas NumeroPersonas){
+        Objects.requireNonNull(clienteId);
         Objects.requireNonNull(nombre);
         Objects.requireNonNull(celular);
         Objects.requireNonNull(correo);
@@ -78,14 +84,20 @@ public class Agencia extends AggregateEvent<AgenciaId> {
     }
 
     public void modificarNombreAsesor(AsesorId asesorId ,Nombre nombre){
+        Objects.requireNonNull(asesorId);
+        Objects.requireNonNull(nombre);
         appendChange(new NombreAsesorModificado(asesorId,nombre)).apply();
     }
 
     public void modificarFuncionAsesor(AsesorId asesorId ,Funcion funcion){
+        Objects.requireNonNull(asesorId);
+        Objects.requireNonNull(funcion);
         appendChange(new FuncionAsesorModificado(asesorId,funcion)).apply();
     }
 
     public void modificarCelularAsesor(AsesorId asesorId , Celular celular){
+        Objects.requireNonNull(asesorId);
+        Objects.requireNonNull(celular);
         appendChange(new CelularAsesorModificado(asesorId,celular)).apply();
     }
 
@@ -95,22 +107,32 @@ public class Agencia extends AggregateEvent<AgenciaId> {
     }
 
     public void modificarNombreServicioAgencia(ServicioAgenciaId servicioAgenciaId , Nombre nombre){
+        Objects.requireNonNull(servicioAgenciaId);
+        Objects.requireNonNull(nombre);
         appendChange(new NombreServicioAgenciaModificado(servicioAgenciaId,nombre)).apply();
     }
 
     public void modificarDescripcionServicioAgencia(ServicioAgenciaId servicioAgenciaId,Descripcion descripcion){
+        Objects.requireNonNull(servicioAgenciaId);
+        Objects.requireNonNull(descripcion);
         appendChange(new DescripcionServicioAgenciaModificado(servicioAgenciaId,descripcion)).apply();
     }
 
     public void modificarCelularCliente(ClienteId clienteId ,Celular celular){
+        Objects.requireNonNull(clienteId);
+        Objects.requireNonNull(celular);
         appendChange(new CelularClienteModificado(clienteId,celular)).apply();
     }
 
     public void modificarCorreoCliente(ClienteId clienteId , Correo correo){
+        Objects.requireNonNull(clienteId);
+        Objects.requireNonNull(correo);
         appendChange(new CorreoClienteModificado(clienteId,correo)).apply();
     }
 
-    public void modificarNumeroPersonasCliente(ClienteId clienteId ,NumeroPersonas NumeroPersonas){
-        appendChange(new NumeroPersonasClienteModificado(clienteId,NumeroPersonas)).apply();
+    public void modificarNumeroPersonasCliente(ClienteId clienteId ,NumeroPersonas numeroPersonas){
+        Objects.requireNonNull(clienteId);
+        Objects.requireNonNull(numeroPersonas);
+        appendChange(new NumeroPersonasClienteModificado(clienteId,numeroPersonas)).apply();
     }
 }

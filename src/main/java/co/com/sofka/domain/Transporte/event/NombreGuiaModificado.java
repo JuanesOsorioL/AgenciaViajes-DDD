@@ -1,6 +1,7 @@
 package co.com.sofka.domain.Transporte.event;
 
-import co.com.sofka.General.Value.Nombre;
+
+import co.com.sofka.domain.General.Nombre;
 import co.com.sofka.domain.Transporte.value.GuiaId;
 import co.com.sofka.domain.generic.DomainEvent;
 

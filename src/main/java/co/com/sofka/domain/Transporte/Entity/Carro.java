@@ -1,7 +1,8 @@
 package co.com.sofka.domain.Transporte.Entity;
 
-import co.com.sofka.General.Value.Capacidad;
-import co.com.sofka.General.Value.Modelo;
+
+import co.com.sofka.domain.General.Capacidad;
+import co.com.sofka.domain.General.Modelo;
 import co.com.sofka.domain.Transporte.value.CarroId;
 import co.com.sofka.domain.generic.Entity;
 

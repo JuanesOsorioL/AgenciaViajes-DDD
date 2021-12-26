@@ -1,6 +1,8 @@
 package co.com.sofka.domain.Agencia.Entity;
 
-import co.com.sofka.General.Value.*;
+import co.com.sofka.domain.General.Celular;
+import co.com.sofka.domain.General.Correo;
+import co.com.sofka.domain.General.Nombre;
 import co.com.sofka.domain.Agencia.value.ClienteId;
 import co.com.sofka.domain.Agencia.value.NumeroPersonas;
 import co.com.sofka.domain.generic.Entity;

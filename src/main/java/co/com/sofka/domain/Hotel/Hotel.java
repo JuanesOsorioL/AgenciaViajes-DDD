@@ -1,18 +1,16 @@
 package co.com.sofka.domain.Hotel;
 
-import co.com.sofka.General.Value.Descripcion;
-import co.com.sofka.General.Value.Nombre;
+import co.com.sofka.domain.General.Descripcion;
+import co.com.sofka.domain.General.Nombre;
 import co.com.sofka.domain.Hotel.Entity.Alimentacion;
 import co.com.sofka.domain.Hotel.Entity.Habitacion;
 import co.com.sofka.domain.Hotel.Entity.ServicioHotel;
 import co.com.sofka.domain.Hotel.event.*;
-
 import co.com.sofka.domain.Hotel.value.*;
-
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
 
@@ -44,40 +42,55 @@ public class Hotel extends AggregateEvent<HotelId> {
     }
 
     public void modificarNombreHotel(HotelId hotelId, Nombre nombre){
+        Objects.requireNonNull(hotelId);
+        Objects.requireNonNull(nombre);
         appendChange(new NombreHotelModificado(hotelId,nombre)).apply();
     }
 
-    public void agregarServicioHotel(Nombre nombre, Descripcion descripcion){
-        var servicioHotelId = new ServicioHotelId();
+    public void agregarServicioHotel(ServicioHotelId servicioHotelId,Nombre nombre, Descripcion descripcion){
+        Objects.requireNonNull(servicioHotelId);
+        Objects.requireNonNull(nombre);
         appendChange(new ServicioHotelAgregado(servicioHotelId,nombre,descripcion)).apply();
     }
 
-    public void agregarAlimentacion(Tipo tipo, FranjaHoraria franjaHoraria){
-        var alimentacionId = new AlimentacionId();
+    public void agregarAlimentacion(AlimentacionId alimentacionId,Tipo tipo, FranjaHoraria franjaHoraria){
+        Objects.requireNonNull(alimentacionId);
+        Objects.requireNonNull(tipo);
+        Objects.requireNonNull(franjaHoraria);
         appendChange(new AlimentacionAgregada(alimentacionId, tipo, franjaHoraria)).apply();
     }
 
-    public void agregarHabitacion(Descripcion descripcion, NumeroCamas numerocamas,Tamano tamano){
-        var habitacionId = new HabitacionId();
+    public void agregarHabitacion(HabitacionId habitacionId,Descripcion descripcion, NumeroCamas numerocamas,Tamano tamano){
+        Objects.requireNonNull(habitacionId);
+        Objects.requireNonNull(descripcion);
+        Objects.requireNonNull(numerocamas);
+        Objects.requireNonNull(tamano);
         appendChange(new HabitacionAgregada(habitacionId, descripcion, numerocamas,tamano)).apply();
     }
 
     public void modificarDescripcion(HotelId hotelId, Descripcion descripcion){
+        Objects.requireNonNull(hotelId);
+        Objects.requireNonNull(descripcion);
         appendChange(new DescripcionModificada(hotelId, descripcion)).apply();
     }
 
     public void modificarDescripcionServicioHotel(ServicioHotelId servicioHotelId, Descripcion descripcion){
+        Objects.requireNonNull(servicioHotelId);
+        Objects.requireNonNull(descripcion);
         appendChange(new DescripcionServicioHotelModificado(servicioHotelId, descripcion)).apply();
     }
 
     public void modificarNumeroCamasHabitacion(HabitacionId habitacionId, NumeroCamas numerocamas){
+        Objects.requireNonNull(habitacionId);
+        Objects.requireNonNull(numerocamas);
         appendChange(new NumeroCamasHabitacionModificado(habitacionId, numerocamas)).apply();
     }
 
     public void modificarTipoAlimentacion(AlimentacionId alimentacionId, Tipo tipo){
+        Objects.requireNonNull(alimentacionId);
+        Objects.requireNonNull(tipo);
         appendChange(new TipoAlimentacionModificado(alimentacionId, tipo)).apply();
     }
-
 
     public Optional<ServicioHotel> buscarServicioHotelPorId(ServicioHotelId servicioHotelId){
         return servicioHotel.stream()
@@ -93,7 +106,4 @@ public class Hotel extends AggregateEvent<HotelId> {
         return alimentacion.stream()
                 .filter(alimentacion->alimentacion.identity().equals(alimentacionId)).findFirst();
     }
-
-
-
 }

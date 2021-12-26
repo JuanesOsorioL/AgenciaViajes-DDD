@@ -1,7 +1,7 @@
 package co.com.sofka.domain.Transporte.commands;
 
-import co.com.sofka.General.Value.Celular;
-import co.com.sofka.General.Value.Nombre;
+import co.com.sofka.domain.General.Celular;
+import co.com.sofka.domain.General.Nombre;
 import co.com.sofka.domain.Transporte.value.Edad;
 import co.com.sofka.domain.Transporte.value.GuiaId;
 import co.com.sofka.domain.Transporte.value.TransporteId;

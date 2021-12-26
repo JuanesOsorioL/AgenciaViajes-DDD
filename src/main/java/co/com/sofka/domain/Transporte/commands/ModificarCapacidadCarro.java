@@ -1,6 +1,6 @@
 package co.com.sofka.domain.Transporte.commands;
 
-import co.com.sofka.General.Value.Capacidad;
+import co.com.sofka.domain.General.Capacidad;
 import co.com.sofka.domain.Transporte.value.CarroId;
 import co.com.sofka.domain.Transporte.value.TransporteId;
 import co.com.sofka.domain.generic.Command;

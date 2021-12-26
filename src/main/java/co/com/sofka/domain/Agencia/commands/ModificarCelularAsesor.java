@@ -1,6 +1,6 @@
 package co.com.sofka.domain.Agencia.commands;
 
-import co.com.sofka.General.Value.Celular;
+import co.com.sofka.domain.General.Celular;
 import co.com.sofka.domain.Agencia.value.AgenciaId;
 import co.com.sofka.domain.Agencia.value.AsesorId;
 import co.com.sofka.domain.generic.Command;

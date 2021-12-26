@@ -1,6 +1,7 @@
 package co.com.sofka.domain.Agencia.commands;
 
-import co.com.sofka.General.Value.Correo;
+
+import co.com.sofka.domain.General.Correo;
 import co.com.sofka.domain.Agencia.value.AgenciaId;
 import co.com.sofka.domain.Agencia.value.ClienteId;
 import co.com.sofka.domain.generic.Command;

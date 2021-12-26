@@ -1,7 +1,7 @@
 package co.com.sofka.domain.Hotel.commands;
 
+import co.com.sofka.domain.General.Nombre;
 import co.com.sofka.domain.Hotel.value.HotelId;
-import co.com.sofka.domain.Hotel.value.Nombre;
 import co.com.sofka.domain.generic.Command;
 
 public class ModificarNombreHotel extends Command {

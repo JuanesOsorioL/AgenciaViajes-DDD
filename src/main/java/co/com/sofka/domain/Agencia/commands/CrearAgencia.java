@@ -1,8 +1,8 @@
 package co.com.sofka.domain.Agencia.commands;
 
-import co.com.sofka.General.Value.Nombre;
+import co.com.sofka.domain.General.Descripcion;
+import co.com.sofka.domain.General.Nombre;
 import co.com.sofka.domain.Agencia.value.AgenciaId;
-import co.com.sofka.General.Value.Descripcion;
 import co.com.sofka.domain.Agencia.value.Destino;
 import co.com.sofka.domain.generic.Command;
 
