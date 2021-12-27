@@ -106,4 +106,28 @@ public class Hotel extends AggregateEvent<HotelId> {
         return alimentacion.stream()
                 .filter(alimentacion->alimentacion.identity().equals(alimentacionId)).findFirst();
     }
+
+    public HotelId hotelId() {
+        return hotelId;
+    }
+
+    public Nombre nombre() {
+        return nombre;
+    }
+
+    public Set<ServicioHotel> servicioHotel() {
+        return servicioHotel;
+    }
+
+    public Set<Habitacion> habitacion() {
+        return habitacion;
+    }
+
+    public Set<Alimentacion> alimentacion() {
+        return alimentacion;
+    }
+
+    public Descripcion descripcion() {
+        return descripcion;
+    }
 }

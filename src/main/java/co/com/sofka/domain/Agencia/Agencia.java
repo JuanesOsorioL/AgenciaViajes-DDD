@@ -135,4 +135,40 @@ public class Agencia extends AggregateEvent<AgenciaId> {
         Objects.requireNonNull(numeroPersonas);
         appendChange(new NumeroPersonasClienteModificado(clienteId,numeroPersonas)).apply();
     }
+
+    public AgenciaId agenciaId() {
+        return agenciaId;
+    }
+
+    public Nombre nombre() {
+        return nombre;
+    }
+
+    public OVHotel hotel() {
+        return hotel;
+    }
+
+    public OVTransporte transporte() {
+        return transporte;
+    }
+
+    public Cliente cliente() {
+        return cliente;
+    }
+
+    public Set<ServicioAgencia> servicioAgencias() {
+        return servicioAgencias;
+    }
+
+    public Asesor asesor() {
+        return asesor;
+    }
+
+    public Descripcion descripcion() {
+        return descripcion;
+    }
+
+    public Destino destino() {
+        return destino;
+    }
 }

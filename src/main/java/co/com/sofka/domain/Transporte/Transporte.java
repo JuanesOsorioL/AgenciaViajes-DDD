@@ -114,4 +114,20 @@ public class Transporte extends AggregateEvent<TransporteId> {
         return avion.stream()
                 .filter(avion->avion.identity().equals(avionId)).findFirst();
     }
+
+    public Nombre nombre() {
+        return nombre;
+    }
+
+    public Set<Guia> guia() {
+        return guia;
+    }
+
+    public Set<Avion> avion() {
+        return avion;
+    }
+
+    public Set<Carro> carro() {
+        return carro;
+    }
 }
